@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 29%;
+    --card: 43 100% 95%;
+    --card-foreground: 0 0% 29%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 29%;
+    --primary: 197 63% 73%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 140 32% 75%;
+    --secondary-foreground: 0 0% 29%;
+    --muted: 43 50% 95%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 43 100% 76%;
+    --accent-foreground: 0 0% 29%;
+    --destructive: 15 100% 79%;
+    --destructive-foreground: 0 0% 29%;
+    --border: 197 30% 85%;
+    --input: 197 30% 90%;
+    --ring: 197 63% 73%;
+    --radius: 0.625rem;
+    
+    --sky-blue: #8ECAE6;
+    --sky-light: #B8E0F0;
+    --sky-dark: #5B8DB8;
+    --mint: #A8D5BA;
+    --mint-light: #C8E8D4;
+    --mint-dark: #7FBF96;
+    --cream: #FFF8E7;
+    --cream-light: #FFFDF5;
+    --cream-dark: #F5EDD3;
+    --yellow-soft: #FFE082;
+    --yellow-light: #FFF0B3;
+    --yellow-dark: #F5C842;
+    --coral: #FFAB91;
+    --coral-light: #FFD4C7;
+    --coral-dark: #E8856A;
+    --deep-blue: #5B8DB8;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-cream text-darkgray;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .game-container {
+    @apply w-full mx-auto min-h-screen relative overflow-hidden;
+  }
+  
+  .game-card {
+    @apply bg-white rounded-2xl shadow-game p-4;
+  }
+  
+  .game-btn {
+    @apply px-6 py-3 rounded-2xl font-bold text-lg transition-all duration-200;
+    @apply hover:scale-105 hover:shadow-game-hover active:scale-95;
+  }
+  
+  .game-btn-primary {
+    @apply game-btn bg-sky text-white;
+  }
+  
+  .game-btn-secondary {
+    @apply game-btn bg-cream text-deep border-2 border-sky;
+  }
+  
+  .game-btn-success {
+    @apply game-btn bg-mint text-white;
+  }
+  
+  .game-btn-warning {
+    @apply game-btn bg-yellow-soft text-darkgray;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .gradient-sky {
+    background: linear-gradient(180deg, #B8E0F0 0%, #8ECAE6 50%, #A8D5BA 100%);
+  }
+  
+  .gradient-cream {
+    background: linear-gradient(180deg, #FFFDF5 0%, #FFF8E7 100%);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8E7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8ECAE6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5B8DB8;
+}
+
+/* Selection styling */
+::selection {
+  background: #8ECAE6;
+  color: white;
+}
