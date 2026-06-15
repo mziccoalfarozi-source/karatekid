@@ -30,12 +30,12 @@ interface Hotspot {
 }
 
 const hotspots: Hotspot[] = [
-  { id: 'mata', x: 35, y: 22, size: 40 },
-  { id: 'hidung', x: 50, y: 32, size: 30 },
-  { id: 'telinga', x: 72, y: 30, size: 30 },
-  { id: 'mulut', x: 50, y: 42, size: 35 },
-  { id: 'tangan', x: 78, y: 60, size: 45 },
-  { id: 'kaki', x: 55, y: 85, size: 50 },
+  { id: 'mata', x: 45, y: 25, size: 35 },
+  { id: 'hidung', x: 50, y: 30, size: 30 },
+  { id: 'telinga', x: 62, y: 30, size: 30 },
+  { id: 'mulut', x: 50, y: 35, size: 30 },
+  { id: 'tangan', x: 28, y: 46, size: 40 },
+  { id: 'kaki', x: 35, y: 75, size: 45 },
 ];
 
 export function MaterialPage() {

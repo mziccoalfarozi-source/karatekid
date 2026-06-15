@@ -80,15 +80,20 @@ export function HomePage() {
           </motion.button>
         </motion.div>
 
-        {/* Footer */}
-        <motion.p
-          className="text-xs text-darkgray/50 mb-2"
+        {/* Footer / Group Members */}
+        <motion.div
+          className="text-[10px] md:text-xs text-darkgray/80 text-center mb-2 bg-white/40 backdrop-blur-sm p-3 rounded-xl shadow-sm border border-white/50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Game Edukasi IPAS Kelas 1 SD
-        </motion.p>
+          <p className="font-bold text-sky-dark mb-1 text-sm md:text-base">Anggota Kelompok:</p>
+          <p>Diva Sonia Afriza (2422101144)</p>
+          <p>Gisha Nur Ledyanita (2422101090)</p>
+          <p>Indri Lestari (2422101118)</p>
+          <p>Khaira Talita Silvia (2422101047)</p>
+          <p>Ilma Zakiah Rachmah (2322402001)</p>
+        </motion.div>
       </div>
 
       <GuideModal />
